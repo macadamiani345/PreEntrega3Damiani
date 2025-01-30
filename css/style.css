@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Crimson Text", serif;
+    background-color: #FFFDEC;
+}
+
+/* encabezado */
+.frase {
+    font-weight: 400;
+    font-style: regular;
+    font-size: 16px;
+    color: #000000;
+    background-color: #FFCFCF;
+    text-align: center;
+}
+
+.variosEncabezado {
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    padding: 1px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.variosEncabezado table {
+    width: 100%;
+}
+
+.variosEncabezado td {
+    vertical-align: middle;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.logo{
+    font-size: 22px;  
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;     
+}
+
+.variosEncabezado .barraBuscador {
+    padding: 5px;
+    width: 1000px;
+    border: 1px solid #ccc;
+}
+
+.variosEncabezado .iconoCarrito {
+    vertical-align: middle;
+}
+
+.navegador {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    background-color: #FFCFCF;
+    text-align: center;
+    margin: 0;
+}
+
+.navegador ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navegador li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navegador a {
+    text-decoration: none;
+    color: black;
+}
+
+/*general*/
+.tituloPagina{
+    font-weight: 600;
+    font-style: bold;
+    font-size: 30px;
+    text-align: center;
+    background-color: #FFCFCF;
+    margin: 20px;
+}
+
+.titulos{
+    font-size: 25px;
+    font-weight: 400;
+    font-style: regular;
+    text-align: center;
+    background-color: #FFCFCF;
+}
+
+.textoAlineado{
+    font-weight: 400;
+    font-style: regular;
+    width: 80%;
+    text-align: left;
+    margin: 20px auto;
+}
+
+/*página principal*/
+.carrusel{
+    width: 1280px;
+    height:auto;
+    margin: 0 auto 0;
+    overflow: hidden;
+}
+
+.carrusel ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: alide 20s infinite alternate ease-in-out;
+}
+
+.carrusel li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.carrusel img{
+    width: 100%;
+    height: 600px;
+}
+
+@keyframes alide {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.textoAlineadoPrimero{
+    width: 90%;
+    text-align: left;
+    margin: 20px auto;
+}
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.item{
+    width: calc(20% - 20px);
+    padding: 10px;
+}
+
+.item img{
+    width: 200px;
+    height: 200px;
+}
+
+.item p{
+    text-align: left;
+}
+
+.item .marca{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: bold;
+}
+
+.item .nombre{
+    font-size: 18px;
+    font-weight: 400;
+    font-style: regular;
+    color: #555;
+}
+
+.item .precio{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: regular;
+    color: #222;
+}
+
+.extras{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin: 30px 30px 30px 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.extras img{
+    max-width: 40%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.contenedorTexto h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contenedorTexto form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenedorTexto input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contenedorTexto input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #FFCFCF;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1em;
+}
+
+/*página tienda*/
+.infoTienda{
+    background-color: #FFCFCF;
+    text-align: left;
+}
+
+/*página tutoriales*/
+.textoAlineado td{
+    padding: 10px;
+}
+
+/*página conoce*/
+.primeraYTerceraTabla{
+    background-color: #FFCFCF; 
+    padding: 20px; 
+    margin: 20px auto; 
+    width: 90%; 
+}
+
+.primeraYTerceraTabla p{
+    font-size: 18px;
+}
+
+.primeraYTerceraTabla p strong{
+    font-size: 22px;
+}
+
+.segundaTabla{
+    margin: 0 auto; 
+    width: 80%; 
+}
+
+.segundaTabla span {
+    color: #FFCFCF;
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-right: 10px; 
+}
+
+.soloCentrar{
+    text-align: center;
+}
+
+/*pie de página*/
+footer{
+    font-weight: 400;
+    font-style: regular;
+    background-color: #D7D3BF;
+    margin-top: 30px;
+}
+
+footer table td{
+    width: 35%; 
+    vertical-align: top;
+    padding: 0;
+}
+
+footer h1{
+    font-size: 20px;
+}
