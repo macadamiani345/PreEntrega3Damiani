@@ -357,6 +357,7 @@ footer h1{
 
     .contenedor{
         flex-direction: row;
+        gap: 15px;
     }
 
     .item{
