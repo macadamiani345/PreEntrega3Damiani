@@ -133,8 +133,8 @@ body{
 }
 
 .item img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
 }
 
 .item p{
@@ -282,6 +282,43 @@ footer h1{
 }
 
 /*Diseño responsive*/
+@media(max-width:744px){
+    .contenedor{
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .item{
+        padding: 4px;
+    }
+
+    .item .marca{
+        font-size: 18px;
+    }
+
+    .item .nombre{
+        font-size: 16px;
+    }
+
+    .item .precio{
+        font-size: 14px;
+    }
+
+    .contenedorTutoriales{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .video {
+        text-align: center;
+        padding: 5px;
+    }
+
+    footer{
+        margin-top: 20px;
+    }
+}
+
 @media(max-width:375px) {
     .frase p {
         font-size: 12px;
@@ -327,11 +364,6 @@ footer h1{
         padding: 4px;
     }
 
-    .item img{
-        width: 100%;
-        height: auto;
-    }
-
     .item .marca{
         font-size: 16px;
     }
@@ -363,11 +395,11 @@ footer h1{
     }
 
     footer h1{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     footer p{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     footer .container {
@@ -381,6 +413,6 @@ footer h1{
     }
 
     footer form{
-        height: 24px;
+        height: 26px;
     }
 }
