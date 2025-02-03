@@ -311,6 +311,7 @@ footer h1{
     .tituloPagina {
         font-size: 22px;
         margin: 14px;
+        padding: 5px;
     }
 
     .titulos{
@@ -343,6 +344,20 @@ footer h1{
         font-size: 12px;
     }
 
+    .contenedorTutoriales{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .video {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .video p {
+        font-size: 14px;
+    }
+
     footer{
         margin-top: 10px;
     }
@@ -369,4 +384,3 @@ footer h1{
         height: 24px;
     }
 }
-
