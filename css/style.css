@@ -39,7 +39,7 @@ body{
 
 .variosEncabezado .barraBuscador {
     padding: 5px;
-    width: 1000px;
+    width: 100%;
     max-width: 800px;
     border: 1px solid #ccc;
 }
@@ -121,7 +121,7 @@ body{
 .contenedor{
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 15px;
@@ -280,3 +280,93 @@ footer{
 footer h1{
     font-size: 20px;
 }
+
+/*Diseño responsive*/
+@media(max-width:375px) {
+    .frase p {
+        font-size: 12px;
+    }
+
+    .variosEncabezado{
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .logo{
+        font-size: 14px;
+    }
+
+    .barraBuscador{
+        width: 90%;
+    }
+
+    .navegador{
+        font-size: 9px;
+    }
+
+    .navegador ul {
+        flex-direction: row;
+    }
+
+    .tituloPagina {
+        font-size: 22px;
+        margin: 14px;
+    }
+
+    .titulos{
+        font-size: 18px;
+    }
+
+    .contenedor{
+        flex-direction: row;
+    }
+
+    .item{
+        width: calc(50% - 20px);
+        padding: 4px;
+    }
+
+    .item img{
+        width: 100%;
+        height: auto;
+    }
+
+    .item .marca{
+        font-size: 16px;
+    }
+
+    .item .nombre{
+        font-size: 14px;
+    }
+
+    .item .precio{
+        font-size: 12px;
+    }
+
+    footer{
+        margin-top: 10px;
+    }
+
+    footer h1{
+        font-size: 14px;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    footer .col-md-4 {
+        padding-top: 6px;
+        text-align: left;
+    }
+
+    footer form{
+        height: 24px;
+    }
+}
+
