@@ -9,7 +9,6 @@ body{
     background-color: #FFFDEC;
 }
 
-/* encabezado */
 .frase {
     font-weight: 400;
     font-style: regular;
@@ -20,6 +19,7 @@ body{
 }
 
 .variosEncabezado {
+    display: flex;
     font-weight: 400;
     font-style: normal;
     width: 100%;
@@ -30,6 +30,7 @@ body{
 
 .logo{
     font-size: 22px;
+    margin-right: auto;
 }
 
 .logo a{
@@ -73,11 +74,11 @@ body{
     color: black;
 }
 
-/*general*/
 .tituloPagina{
     font-weight: 600;
     font-style: bold;
     font-size: 30px;
+    padding: 5px;
     text-align: center;
     background-color: #FFCFCF;
     margin: 20px;
@@ -99,7 +100,6 @@ body{
     margin: 20px auto;
 }
 
-/*página principal*/
 .carrusel{
     width: 1280px;
     height:auto;
@@ -206,7 +206,6 @@ body{
     font-size: 1em;
 }
 
-/*página tienda*/
 .iframe {
     width: 100%;
     border-radius: 5px;
@@ -217,7 +216,6 @@ body{
     width: 100%;
 }
 
-/*página tutoriales*/
 .contenedorTutoriales {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -241,7 +239,6 @@ body{
     color: #333;
 }
 
-/*página conoce*/
 .primeraYTerceraTabla{
     background-color: #FFCFCF; 
     padding: 20px; 
@@ -269,7 +266,6 @@ body{
     text-align: center;
 }
 
-/*pie de página*/
 footer{
     font-weight: 400;
     font-style: regular;
@@ -281,7 +277,7 @@ footer h1{
     font-size: 20px;
 }
 
-/*Diseño responsive*/
+/*Diseño responsive para ipad mini 8.3 y iPhone 13 mini*/
 @media(max-width:744px){
     .contenedor{
         flex-direction: row;
