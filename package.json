@@ -1,0 +1,21 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/macadamiani345/PreEntrega2Damiani#readme",
+  "bugs": {
+    "url": "https://github.com/macadamiani345/PreEntrega2Damiani/issues"
+  },
+  "repository": {
+    "type": "git",
+    "sass": "sass --watch ./scss/style.css : ./css/style.css",
+    "url": "git+https://github.com/macadamiani345/PreEntrega2Damiani.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
