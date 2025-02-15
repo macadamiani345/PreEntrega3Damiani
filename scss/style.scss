@@ -1,9 +1,13 @@
 /*llamados a la carpeta utilities*/
+@import "./utilities/variables";
 
 /*llamamos a la carpeta base*/
 @import "./base/tipografias";
 
 /*llamamos a la carpeta layout*/
+@import "./layout/body";
+@import "./layout/header";
+@import "./layout/footer";
 
 /*llamamos a la carpeta components*/
 

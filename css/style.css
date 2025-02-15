@@ -1,3 +1,137 @@
+/*llamados a la carpeta utilities*/
+/*llamamos a la carpeta base*/
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+/*llamamos a la carpeta layout*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #FFFDEC;
+}
+
+header p {
+  font-weight: 400;
+  font-style: regular;
+  font-size: 16px;
+  color: #000000;
+  background-color: #FFCFCF;
+  text-align: center;
+}
+header .variosEncabezado {
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  padding: 1px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+header .variosEncabezado .contenedor {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+header .variosEncabezado .contenedor div {
+  text-align: center;
+}
+header .variosEncabezado .contenedor span {
+  font-size: 22px;
+  margin-right: auto;
+}
+header .variosEncabezado .contenedor span a {
+  text-decoration: none;
+  color: #000000;
+}
+header .variosEncabezado .contenedor input {
+  padding: 5px;
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+header .variosEncabezado .contenedor img {
+  vertical-align: end;
+}
+header nav {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  background-color: #FFCFCF;
+  text-align: center;
+  margin: 0;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+header nav li {
+  position: relative;
+  margin: 0 15px;
+}
+header nav a {
+  text-decoration: none;
+  color: #000000;
+}
+
+footer {
+  font-weight: 400;
+  font-style: regular;
+  background-color: #D7D3BF;
+  margin-top: 30px;
+}
+footer .footerContenedor {
+  max-width: 100%;
+}
+footer .footerContenedor .footerRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer .footerContenedor .footerRow .footerCol {
+  flex: 1;
+  max-width: 33%;
+  padding: 20px;
+  border-radius: 8px;
+}
+footer .footerContenedor .footerRow .footerCol h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+footer .footerContenedor .footerRow .footerCol p {
+  font-size: 14px;
+  color: #333;
+}
+footer .footerContenedor .footerRow .footerCol form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .footerContenedor .footerRow .footerCol form input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+footer .footerContenedor .footerRow .footerCol form button {
+  padding: 10px 20px;
+  background-color: #8e8e8e;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+footer .footerFinal {
+  font-size: 12px;
+  color: #333;
+  text-align: left;
+}
+
+/*llamamos a la carpeta components*/
+/*llamamos a la carpeta mediaQ*/
 
 /*# sourceMappingURL=style.css.map */
