@@ -1,6 +1,48 @@
 /*llamados a la carpeta utilities*/
-/*llamamos a la carpeta base*/
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.aparecerAbajo {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.aparecerIzquierda {
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.aparecerArriba {
+  animation: fadeInFromTop 1s ease-in-out;
+}
+
+/*llamamos a la carpeta base*/
 * {
   margin: 0;
   padding: 0;
@@ -165,7 +207,7 @@ footer .footerFinal {
   text-align: center;
   background-color: #FFCFCF;
 }
-.textoAlineadoPrimero .contenedor {
+.textoAlineadoPrimero .contenedorProductos {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -173,27 +215,27 @@ footer .footerFinal {
   gap: 20px;
   margin-top: 15px;
 }
-.textoAlineadoPrimero .contenedor .item {
+.textoAlineadoPrimero .contenedorProductos .item {
   width: calc(20% - 20px);
   padding: 10px;
 }
-.textoAlineadoPrimero .contenedor .item img {
+.textoAlineadoPrimero .contenedorProductos .item img {
   width: 100%;
   height: auto;
 }
-.textoAlineadoPrimero .contenedor .item p {
+.textoAlineadoPrimero .contenedorProductos .item p {
   text-align: left;
 }
-.textoAlineadoPrimero .contenedor .item .marca {
+.textoAlineadoPrimero .contenedorProductos .item .marca {
   font-size: 20px;
   font-weight: 600;
 }
-.textoAlineadoPrimero .contenedor .item .nombre {
+.textoAlineadoPrimero .contenedorProductos .item .nombre {
   font-size: 18px;
   font-weight: 400;
   color: #555;
 }
-.textoAlineadoPrimero .contenedor .item .precio {
+.textoAlineadoPrimero .contenedorProductos .item .precio {
   font-size: 16px;
   font-weight: 400;
   color: #222;
@@ -250,7 +292,7 @@ footer .footerFinal {
   text-align: center;
   background-color: #FFCFCF;
 }
-.textoAlineado .contenedor {
+.textoAlineado .contenedorProductos {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -258,27 +300,27 @@ footer .footerFinal {
   gap: 20px;
   margin-top: 15px;
 }
-.textoAlineado .contenedor .item {
+.textoAlineado .contenedorProductos .item {
   width: calc(25% - 20px);
   padding: 10px;
 }
-.textoAlineado .contenedor .item img {
+.textoAlineado .contenedorProductos .item img {
   width: 100%;
   height: auto;
 }
-.textoAlineado .contenedor .item p {
+.textoAlineado .contenedorProductos .item p {
   text-align: left;
 }
-.textoAlineado .contenedor .item .marca {
+.textoAlineado .contenedorProductos .item .marca {
   font-size: 20px;
   font-weight: 600;
 }
-.textoAlineado .contenedor .item .nombre {
+.textoAlineado .contenedorProductos .item .nombre {
   font-size: 18px;
   font-weight: 400;
   color: #555;
 }
-.textoAlineado .contenedor .item .precio {
+.textoAlineado .contenedorProductos .item .precio {
   font-size: 16px;
   font-weight: 400;
   color: #222;
@@ -342,7 +384,7 @@ footer .footerFinal {
 }
 
 .carrusel {
-  width: 1280px;
+  width: 100%;
   height: auto;
   margin: 0 auto 0;
   overflow: hidden;
@@ -361,6 +403,7 @@ footer .footerFinal {
 .carrusel ul li img {
   width: 100%;
   height: 600px;
+  object-fit: cover;
 }
 @keyframes alide {
   0% {
@@ -389,6 +432,226 @@ footer .footerFinal {
   }
 }
 
+.primeraYTerceraTabla {
+  background-color: #FFCFCF;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.primeraYTerceraTabla .fila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.primeraYTerceraTabla .columna {
+  padding: 20px;
+}
+.primeraYTerceraTabla .texto {
+  flex: 2;
+}
+.primeraYTerceraTabla .imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.primeraYTerceraTabla .imagen img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.primeraYTerceraTabla h1 {
+  font-size: 28px;
+}
+
+.segundaTabla {
+  margin: 0 auto;
+  width: 80%;
+}
+.segundaTabla span {
+  color: #FFCFCF;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.soloCentrar {
+  text-align: center;
+}
+
 /*llamamos a la carpeta mediaQ*/
+@media (max-width: 834px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .contenedor input {
+    max-width: 100%;
+  }
+  .carrusel {
+    height: 400px;
+  }
+  .carrusel ul li img {
+    width: 100%;
+    height: 400px;
+  }
+  .item {
+    padding: 4px;
+  }
+  .item .marca {
+    font-size: 18px;
+  }
+  .item .nombre {
+    font-size: 16px;
+  }
+  .item .precio {
+    font-size: 14px;
+  }
+  .extras {
+    flex-direction: column;
+    align-items: center;
+  }
+  .extras img {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+  .extras .contenedorTexto {
+    padding-left: 0;
+    text-align: center;
+  }
+  .extras .contenedorTexto h1 {
+    font-size: 1.5em;
+  }
+  .extras .contenedorTexto h1 form {
+    width: 100%;
+    justify-content: center;
+  }
+  .extras .contenedorTexto h1 form input[type=text] {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .extras .contenedorTexto h1 form input[type=submit] {
+    width: 40%;
+    margin-top: 10px;
+  }
+  .ubicacion .contenedorTienda {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ubicacion .contenedorTienda .info p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .ubicacion .contenedorTienda .mapa {
+    width: 100%;
+    height: 400px;
+    max-width: 900px;
+  }
+  .contenedorTutoriales {
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .footerRow {
+    flex-direction: row;
+    align-items: left;
+  }
+  .footerCol {
+    max-width: 80%;
+  }
+}
+@media (max-width: 375px) {
+  header p {
+    font-size: 12px;
+  }
+  header .variosEncabezado {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  header .contenedor {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  header .contenedor span {
+    font-size: 14px;
+  }
+  header .contenedor input {
+    width: 90%;
+  }
+  header .contenedor img {
+    width: 20px;
+    height: 20px;
+  }
+  header nav {
+    font-size: 9px;
+  }
+  header nav ul {
+    flex-direction: row;
+  }
+  .tituloPagina {
+    font-size: 22px;
+    margin: 14px;
+    padding: 5px;
+  }
+  .titulos {
+    font-size: 18px;
+  }
+  .contenedorProductos {
+    flex-direction: row;
+    gap: 15px;
+  }
+  .contenedorProductos .item {
+    width: calc(50% - 20px);
+    padding: 4px;
+  }
+  .contenedorProductos .item .marca {
+    font-size: 16px;
+  }
+  .contenedorProductos .item .nombre {
+    font-size: 14px;
+  }
+  .contenedorProductos .item .precio {
+    font-size: 12px;
+  }
+  .contenedorTutoriales {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .contenedorTutoriales .video {
+    text-align: center;
+    padding: 5px;
+  }
+  .contenedorTutoriales .video p {
+    font-size: 14px;
+  }
+  footer {
+    margin-top: 10px;
+  }
+  footer .footerRow {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .footerRow .footerCol {
+    max-width: 100%;
+    text-align: center;
+  }
+  footer .footerRow .footerCol h1 {
+    font-size: 12px;
+  }
+  footer .footerRow .footerCol p {
+    font-size: 10px;
+  }
+  footer .footerRow .footerCol form {
+    flex-direction: row;
+    align-items: left;
+  }
+  footer .footerRow .footerCol form input {
+    width: 90%;
+  }
+  footer .footerRow .footerCol form button {
+    width: 50%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

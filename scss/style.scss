@@ -1,6 +1,7 @@
 /*llamados a la carpeta utilities*/
 @import "./utilities/variables";
 @import "./utilities/mixins";
+@import "./utilities/animation";
 
 /*llamamos a la carpeta base*/
 @import "./base/reset";
@@ -15,5 +16,8 @@
 /*llamamos a la carpeta components*/
 @import "./components/cards";
 @import "./components/carrusel";
+@import "./components/conoceComponents";
 
 /*llamamos a la carpeta mediaQ*/
+@import "./mediaQ/iPadMini8.3_744px.scss";
+@import "./mediaQ/iPhone13Mini_375px.scss";
