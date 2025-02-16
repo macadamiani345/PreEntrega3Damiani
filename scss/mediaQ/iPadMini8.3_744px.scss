@@ -85,6 +85,22 @@
     .contenedorTutoriales{
         grid-template-columns: repeat(2, 2fr);
     }
+
+    .primeraYTerceraTabla .fila .columnaTexto{
+        p{
+            font-size: 20px;
+        }
+    }
+
+    .segundaTabla {
+        p{
+            font-size: 18px;
+
+            span{
+                font-size: 26px;
+            }
+        }
+    }
     
     .footerRow {
         flex-direction: row;

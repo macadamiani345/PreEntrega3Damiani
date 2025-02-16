@@ -553,6 +553,15 @@ footer .footerFinal {
   .contenedorTutoriales {
     grid-template-columns: repeat(2, 2fr);
   }
+  .primeraYTerceraTabla .fila .columnaTexto p {
+    font-size: 20px;
+  }
+  .segundaTabla p {
+    font-size: 18px;
+  }
+  .segundaTabla p span {
+    font-size: 26px;
+  }
   .footerRow {
     flex-direction: row;
     align-items: left;
@@ -569,50 +578,134 @@ footer .footerFinal {
     margin-top: 8px;
     margin-bottom: 8px;
   }
-  header .contenedor {
-    grid-template-columns: 1fr;
+  header .variosEncabezado .contenedor {
     text-align: center;
   }
-  header .contenedor span {
-    font-size: 14px;
+  header .variosEncabezado .contenedor span {
+    font-size: 18px;
   }
-  header .contenedor input {
+  header .variosEncabezado .contenedor input {
     width: 90%;
   }
-  header .contenedor img {
+  header .variosEncabezado .contenedor img {
     width: 20px;
     height: 20px;
   }
   header nav {
-    font-size: 9px;
+    font-size: 12px;
   }
   header nav ul {
     flex-direction: row;
   }
   .tituloPagina {
     font-size: 22px;
-    margin: 14px;
+    margin-top: 14px;
+    margin-bottom: 2px;
     padding: 5px;
   }
   .titulos {
     font-size: 18px;
   }
-  .contenedorProductos {
-    flex-direction: row;
-    gap: 15px;
+  .carrusel {
+    margin-top: 10px;
+    height: 200px;
   }
-  .contenedorProductos .item {
-    width: calc(50% - 20px);
+  .carrusel ul li img {
+    height: 100%;
+  }
+  .textoAlineadoPrimero .titulos {
+    font-size: 18px;
+  }
+  .textoAlineadoPrimero .contenedorProductos {
+    flex-direction: row;
+    gap: 5px;
+  }
+  .textoAlineadoPrimero .contenedorProductos .item {
+    width: calc(33.33% - 10px);
     padding: 4px;
   }
-  .contenedorProductos .item .marca {
+  .textoAlineadoPrimero .contenedorProductos .item img {
+    width: 100%;
+    height: auto;
+  }
+  .textoAlineadoPrimero .contenedorProductos .item .marca {
     font-size: 16px;
   }
-  .contenedorProductos .item .nombre {
+  .textoAlineadoPrimero .contenedorProductos .item .nombre {
     font-size: 14px;
   }
-  .contenedorProductos .item .precio {
+  .textoAlineadoPrimero .contenedorProductos .item .precio {
     font-size: 12px;
+  }
+  .extras {
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 0px;
+  }
+  .extras img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .extras .contenedorTexto {
+    padding-left: 0;
+    text-align: center;
+  }
+  .extras .contenedorTexto h1 {
+    font-size: 16px;
+  }
+  .extras .contenedorTexto h1 form {
+    width: 100%;
+    justify-content: center;
+  }
+  .extras .contenedorTexto h1 form input[type=text] {
+    font-size: 12px;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .extras .contenedorTexto h1 form input[type=submit] {
+    font-size: 12px;
+    width: 40%;
+    margin-top: 10px;
+  }
+  .textoAlineado .titulos {
+    font-size: 18px;
+  }
+  .textoAlineado .contenedorProductos {
+    flex-direction: row;
+    gap: 5px;
+  }
+  .textoAlineado .contenedorProductos .item {
+    width: calc(50% - 10px);
+    padding: 4px;
+  }
+  .textoAlineado .contenedorProductos .item img {
+    width: 100%;
+    height: auto;
+  }
+  .textoAlineado .contenedorProductos .item .marca {
+    font-size: 16px;
+  }
+  .textoAlineado .contenedorProductos .item .nombre {
+    font-size: 14px;
+  }
+  .textoAlineado .contenedorProductos .item .precio {
+    font-size: 12px;
+  }
+  .ubicacion {
+    margin: 10px;
+  }
+  .ubicacion .contenedorTienda {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ubicacion .contenedorTienda .info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .ubicacion .contenedorTienda .mapa iframe {
+    height: 300px;
   }
   .contenedorTutoriales {
     grid-template-columns: repeat(1, 1fr);
@@ -625,32 +718,47 @@ footer .footerFinal {
   .contenedorTutoriales .video p {
     font-size: 14px;
   }
+  .primeraYTerceraTabla .fila {
+    flex-direction: column;
+  }
+  .primeraYTerceraTabla .fila .columnaTexto h1 {
+    font-size: 24px;
+  }
+  .primeraYTerceraTabla .fila .columnaTexto h1 p {
+    font-size: 24px;
+  }
+  .segundaTabla p {
+    font-size: 16px;
+  }
+  .segundaTabla p span {
+    font-size: 24px;
+  }
   footer {
     margin-top: 10px;
   }
-  footer .footerRow {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  footer .footerRow .footerCol {
-    max-width: 100%;
-    text-align: center;
-  }
-  footer .footerRow .footerCol h1 {
-    font-size: 12px;
-  }
-  footer .footerRow .footerCol p {
-    font-size: 10px;
-  }
-  footer .footerRow .footerCol form {
+  footer .footerContenedor .footerRow {
     flex-direction: row;
     align-items: left;
+    gap: 5px;
   }
-  footer .footerRow .footerCol form input {
-    width: 90%;
+  footer .footerContenedor .footerRow .footerCol {
+    max-width: 50%;
+    padding: 10px;
   }
-  footer .footerRow .footerCol form button {
-    width: 50%;
+  footer .footerContenedor .footerRow .footerCol h1 {
+    font-size: 14px;
+  }
+  footer .footerContenedor .footerRow .footerCol p {
+    font-size: 12px;
+  }
+  footer .footerContenedor .footerRow .footerCol form {
+    flex-direction: row;
+  }
+  footer .footerContenedor .footerRow .footerCol form input {
+    width: 200px;
+  }
+  footer .footerFinal {
+    font-size: 10px;
   }
 }
 
