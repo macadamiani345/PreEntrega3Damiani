@@ -42,3 +42,18 @@
 .aparecerArriba {
     animation: fadeInFromTop 1s ease-in-out; 
 }
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.aparecerDerecha {
+    animation: fadeInRight 1s ease-in-out;
+}
